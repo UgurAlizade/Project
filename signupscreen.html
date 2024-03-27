@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div>
+    <img class="pic" src="Screenshot 2024-02-10 165747.png" alt="">
+    <h1 class="log">Sign Up</h1>
+    <hr>
+    <p class="ex">Explore the World!</p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Password" minlength="7">
+    <h4 class="but" id="submit">Submit</h4>
+    <p class="pass" id="pass">Forgot Password?</p>
+    <a href="/signin.html" class="new" id="new">Log In</a>
+</div>
+<script>
+document.getElementById('pass').addEventListener('click', function() {window.location.href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop"})
+document.getElementById('submit').addEventListener('click', function() {
+    var password = document.getElementById('password').value;
+    var email = document.getElementById('email').value
+    if(email !== "" && password !== "") {
+        window.location.href = "/signin.html"
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);;
+    } else {
+        alert("Please enter credentials");
+    }
+})
+</script>
+</body>
+</html>

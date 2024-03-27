@@ -1,0 +1,61 @@
+div {
+    background-color: #D6D6D6;
+    height: 60.3vh;
+    width: 60vw;
+}
+.pic {
+    float: right;
+}
+.log {
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,label {
+    display: block;
+}
+label {
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+input {
+    position: relative;
+    left: 10vw;
+}
+.ex,h1,h4,.pass {
+    text-align: center;
+}
+h1 {
+    padding-top: 7vh;
+}
+h4 {
+    border: solid #810081;
+    border-radius: 1vw;
+    background-color: #810081;
+    margin-left: 10vw;
+    margin-right: 40vw;
+    color: white;
+    position: relative;
+    left: -0.4vw;
+}
+input {
+    height: 2.5vh;
+    width: 14vw;
+}
+hr {
+    margin-left: 5vw;
+    margin-right: 37vw;
+    color: purple;
+}
+.pass:hover {
+cursor: pointer;
+}
+#submit:hover {
+    cursor: pointer;
+}
+#new {
+    text-decoration: none;
+    color: blue;
+    position: relative;
+    left: 20vw;
+    bottom: 3.5vh;
+}
